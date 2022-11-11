@@ -42,7 +42,7 @@ function genererMagasin(data){
     }
 }
 document.addEventListener('DOMContentLoaded', (event) => {
-    fetch('./commerces.json')
+    fetch('/../commerces.json')
         .then(commerces => {return commerces.json()})
         .then(data => genererMagasin(data) )
 });
