@@ -16,6 +16,7 @@ function genererMagasin(data){
         innerHTML += "</ul></article>";
     }
     locaux.innerHTML = innerHTML;
+    console.log(innerHTML);
 
     for(let indice in data.commerces_internationaux){
         let element = data.commerces_internationaux[indice];
@@ -42,7 +43,8 @@ function genererMagasin(data){
     }
 }
 document.addEventListener('DOMContentLoaded', (event) => {
-    fetch('./commerces.json')
+    fetch('/../commerces.json')
         .then(commerces => {return commerces.json()})
-        .then(data => genererMagasin(data) )
+        .then((data) => {console.log(data);})
+        .then((data) => genererMagasin(data))
 });
