@@ -42,9 +42,9 @@ function genererMagasin(data){
         internationaux.appendChild(article)
     }
 }
-document.addEventListener('DOMContentLoaded', (event) => {
-    fetch('/../commerces.json')
+
+function chargerpoints_de_vente (){
+    fetch('./commerces')
         .then(commerces => {return commerces.json()})
-        .then((data) => {console.log(data);})
-        .then((data) => genererMagasin(data))
-});
+        .then(data => genererMagasin(data) )
+}

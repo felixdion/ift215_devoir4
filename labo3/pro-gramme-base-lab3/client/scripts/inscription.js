@@ -25,7 +25,3 @@ function attacherListenerMenuGauche(){
 async function chargerinscription (){
     attacherListenerMenuGauche()
 }
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    attacherListenerMenuGauche()
-});
