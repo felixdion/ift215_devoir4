@@ -1,6 +1,6 @@
 const express = require('express');
 
-const commerces = require('../client/commerces.json');
+const commerces = require('../data/repo/commerces.json');
 
 const router = express.Router();
 
