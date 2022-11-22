@@ -39,6 +39,7 @@ function item_to_html(item){
 }
 
 function add_item(id_item){
+    console.log(id_item);
     $.ajax({
         url: "/clients/"+1+"/panier",
         method:"POST",
